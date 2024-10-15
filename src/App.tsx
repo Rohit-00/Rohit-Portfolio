@@ -10,6 +10,7 @@ import Tech from './components/tech'
 import Projects from './components/projects'
 import Qoute from './components/qoute'
 import Footer from './components/footer'
+import useLenisScroll from './hooks/lenis'
 
 const links = [
   {
@@ -42,15 +43,14 @@ const links = [
     ),
     href: "#",
   },
-
- 
 ];
 
 function App() {
 
+  useLenisScroll();
 
   return (
-   <>
+   <div className=''>
    <Navbar/>
     <Intro/>
     <div className='flex-1 mt-12 flex items-center justify-center flex-col'>
@@ -60,13 +60,12 @@ function App() {
         <div>
     rohit.991063@gmail.com
     </div>
-    
     </div>
     <Tech/>
     <Projects/>
     <Qoute/>
     <Footer/>
-   </>
+   </div>
   )
 }
 
