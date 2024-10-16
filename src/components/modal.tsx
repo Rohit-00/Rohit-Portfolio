@@ -5,7 +5,7 @@ import { IconX } from '@tabler/icons-react';
 interface ModalProps {
   showModal      : boolean;
   onClose        : () => void;
-  Children       : any | ReactElement,
+  Children       : ReactElement | any,
   image         ?: string,
   projectName   ?: string,
   projectLink   ?: string,
@@ -15,7 +15,7 @@ interface ModalProps {
   projectDesc   ?: string
 }
 
-const Modal: React.FC<ModalProps> = ({ showModal, onClose, Children }) => {
+const Modal: React.FC <ModalProps> = ({ showModal, onClose, Children }) => {
   const modalRef = useRef<HTMLDivElement>(null);
 
   const handleClickOutside = (event: MouseEvent) => {
@@ -34,6 +34,7 @@ const Modal: React.FC<ModalProps> = ({ showModal, onClose, Children }) => {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
+    
   }, [showModal]);
 
   if (!showModal) return null;

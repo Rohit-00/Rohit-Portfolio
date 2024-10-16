@@ -15,7 +15,7 @@ const Tech = () => {
     <div>
       <div>
         <div>
-            <h1 className='text-3xl  sm:mx-20 sm:text-5xl'>Tech I use</h1>
+            <h1 className='text-3xl  mx-6 sm:mx-20 sm:text-5xl'>Tech I use</h1>
         </div>
     <div className='grid grid-cols-5 grid-rows-2  gap-y-10 gap-x-9 mt-10 px-9 sm:px-28   '>
         <div className='flex flex-col justify-between items-center'><img alt='tsIcon' src={reactIcon} className='h-11'></img> <div className='text-xs sm:text-base'>React</div></div>
