@@ -36,8 +36,7 @@ const projects = [
     projectTech   : 'React Native, firebase, Google Books API',
     projectStatus : false,
     projectDesc   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed augue congue, blandit magna at, placerat eros. Mauris faucibus convallis ex, et efficitur mi placerat a. In hac habitasse platea dictumst. In hac habitasse platea dictumst. Nullam efficitur gravida pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus tincidunt mattis ipsum, ut commodo lorem molestie sit amet. Morbi sollicitudin iaculis felis ultrices iaculis. Praesent a tellus vulputate, placerat velit ac, viverra est. Nulla vel porttitor erat. Mauris quis consequat neque. In semper gravida nibh vel commodo. Aenean eu lectus justo. Vestibulum faucibus nibh a dolor auctor tincidunt.",
-    hoverText     : "A react native ui library",
-    githubLink    : ""
+    hoverText     : "A react native ui library"
 
   },
   {
@@ -48,8 +47,7 @@ const projects = [
     projectTech   : 'React Native, React, Reanimated ',
     projectStatus : true,
     projectDesc   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed augue congue, blandit magna at, placerat eros. Mauris faucibus convallis ex, et efficitur mi placerat a. In hac habitasse platea dictumst. In hac habitasse platea dictumst. Nullam efficitur gravida pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus tincidunt mattis ipsum, ut commodo lorem molestie sit amet. Morbi sollicitudin iaculis felis ultrices iaculis. Praesent a tellus vulputate, placerat velit ac, viverra est. Nulla vel porttitor erat. Mauris quis consequat neque. In semper gravida nibh vel commodo. Aenean eu lectus justo. Vestibulum faucibus nibh a dolor auctor tincidunt.",
-    hoverText     : "A react native ui library",
-    githubLink    : ""
+    hoverText     : "A react native ui library"
 
   },
   
@@ -114,7 +112,10 @@ const Projects = () => {
       </div> 
       </HoverDescription>
       <hr className="opacity-65 sm:mx-20 mx-10 sm:my-0 my-6 " />
-      <Modal showModal={showModal} onClose={toggleModal} Children={ModalContent}/>
+      <Modal showModal={showModal} onClose={toggleModal}>
+        <ModalContent/>
+        </Modal>
+        
        </>
       
       )
