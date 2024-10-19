@@ -95,7 +95,7 @@ const Projects = () => {
   return (
     <div className='mt-9'>
 
-      <h1 className='text-3xl sm:text-5xl mx-5 sm:mx-20 mb-5'>Projects</h1>
+      <h1 className='text-3xl sm:text-6xl mx-5 sm:mx-20 mb-1' style={{fontFamily:'Ubuntu mono'}}>Projects</h1>
    
       <div>
       <div className='flex flex-col '> 
@@ -106,7 +106,7 @@ const Projects = () => {
       <HoverDescription description={item.hoverText} backgroundColor='teal'> 
       <div onClick={()=>{toggleModal();setCurrentProject(item)}} className=' flex flex-col sm:flex-row justify-between sm:h-32 sm:items-center cursor-pointer transition-transform duration-300 ease-in-out sm:hover:scale-90 sm:mx-20 mx-10'>
       <div className=' text-3xl sm:text-3xl font-normal'>{item.projectName}</div>
-      <div className=' sm:hidden'><img src={'https://placehold.co/600x400.png'} alt='placeholder' height={400} width={600}></img></div>
+      <div className=' sm:hidden'><img src={'https://i.ibb.co/zQ3thNC/image.png'} alt='placeholder' height={400} width={600}></img></div>
       <div className='text-sm text-end  flex flex-col'><div className='text-xl sm:text-2xl font-thin'>{item.projectType}</div>
       <div className='font-extralight'>{item.projectTech}</div></div>
       </div> 

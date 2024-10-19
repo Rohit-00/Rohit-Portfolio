@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'Ubuntu mono': ['Ubuntu mono', 'sans-serif'],
+      },
 
     },
   },

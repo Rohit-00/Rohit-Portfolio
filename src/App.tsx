@@ -18,7 +18,7 @@ const links = [
     icon: (
       <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#",
+    href: "https://x.com/byir0nic",
   },
 
   {
@@ -26,14 +26,14 @@ const links = [
     icon: (
       <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#",
+    href: "https://github.com/Rohit-00",
   },
   {
     title: "Behance",
     icon: (
       <IconBrandBehance className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#",
+    href: "https://www.behance.net/Rohit_Portfolio",
   },
 
   {
@@ -53,11 +53,11 @@ function App() {
    <div className=''>
    <Navbar/>
     <Intro/>
-    <div className='flex-1 mt-12 flex items-center justify-center flex-col'>
+    <div className='flex-1 mt-12 flex items-center justify-center flex-col mb-6'>
     <FloatingDock 
     items={links}
     />
-        <div>
+        <div style={{fontFamily:'Ubuntu mono'}}>
     rohit.991063@gmail.com
     </div>
     </div>

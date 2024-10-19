@@ -7,23 +7,23 @@ import behance from '../assets/socials/behance.svg'
 
 const Footer = () => {
   return (
-    <div>
+    <div style={{fontFamily:'Ubuntu mono'}}>
     
     <div className='flex flex-col justify-evenly items-center mt-14'>
     <div className='flex flex-row'>
     <div className='flex flex-col mx-14 gap-y-2'>
     <div className='font-bold text-lg'>Follow me</div>  
     <div className='grid sm:grid-cols-2 gap-2 gap-x-6 gap-y-4'>
-    <div className='flex flex-row gap-2 items-center justify-start'><img src={linkedIn} alt='linkedIn' height={30} width={30}></img>LinkedIn</div>
-    <div className='flex flex-row gap-2 items-center justify-start '><img src={twitter} alt='linkedIn' height={30} width={30}></img>Twitter</div>
-    <div className='flex flex-row gap-2 items-center justify-start '><img src={github} alt='linkedIn' height={30} width={30}></img>Github</div>
-    <div className='flex flex-row gap-2 items-center justify-start '><img src={behance} alt='linkedIn' height={30} width={30}></img>Behance</div>
+    <a href='#'><div className='flex flex-row gap-2 items-center justify-start'><img src={linkedIn} alt='linkedIn' height={30} width={30}></img>LinkedIn</div></a>
+    <a href='https://x.com/byir0nic' target='_blank'><div className='flex flex-row gap-2 items-center justify-start '><img src={twitter} alt='twitter' height={30} width={30}></img>Twitter</div></a>
+    <a href='https://github.com/Rohit-00' target='_blank'><div className='flex flex-row gap-2 items-center justify-start '><img src={github} alt='github' height={30} width={30}></img>Github</div></a>
+    <a href='https://www.behance.net/Rohit_Portfolio' target='_blank'><div className='flex flex-row gap-2 items-center justify-start '><img src={behance} alt='behance' height={30} width={30}></img>Behance</div></a>
     </div>
     </div>
     <div className='flex flex-col mx-14 gap-y-2 '>
     <div className='font-bold text-lg'>Explore</div>
     <div className='grid sm:grid-cols-2 gap-2 gap-x-6 gap-y-5'>
-    <div>Home</div>
+    <div><a href=''>Home</a></div>
     <div>About me</div>
     <div>Projects</div>
     <div>Download CV</div>
