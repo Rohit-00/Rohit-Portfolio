@@ -12,7 +12,7 @@ import mongoDBIcon from '../assets/icons/mongoDBIcon.png'
 
 const Tech = () => {
   return (
-    <div style={{fontFamily:'Ubuntu mono'}}>
+    <div style={{fontFamily:'Helvetica'}}>
       <div>
         <div>
             <h1 className='text-3xl  mx-6 sm:mx-20 sm:text-6xl'>Tech I use</h1>

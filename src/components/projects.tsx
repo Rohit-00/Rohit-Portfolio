@@ -61,7 +61,7 @@ const Projects = () => {
   const ModalContent : React.FC  = () => {
 
     return(
-      <div>
+      <div style={{fontFamily:'Helvetica'}}>
         <img src={currentProject.image}  />
         <div className='flex justify-between mt-4 mx-6 items-center'>
         <a href={currentProject.projectLink}>
@@ -93,9 +93,9 @@ const Projects = () => {
 
 
   return (
-    <div className='mt-9'>
+    <div className='mt-9' style={{fontFamily:'Helvetica'}}>
 
-      <h1 className='text-3xl sm:text-6xl mx-5 sm:mx-20 mb-1' style={{fontFamily:'Ubuntu mono'}}>Projects</h1>
+      <h1 className='text-3xl sm:text-6xl mx-5 sm:mx-20 mb-1' >Projects</h1>
    
       <div>
       <div className='flex flex-col '> 

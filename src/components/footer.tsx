@@ -7,7 +7,7 @@ import behance from '../assets/socials/behance.svg'
 
 const Footer = () => {
   return (
-    <div style={{fontFamily:'Ubuntu mono'}}>
+    <div style={{fontFamily:'Helvetica'}}>
     
     <div className='flex flex-col justify-evenly items-center mt-14'>
     <div className='flex flex-row'>
