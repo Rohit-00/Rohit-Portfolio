@@ -13,21 +13,21 @@ export default function Hero() {
     {
       title: "Twitter",
       icon: (
-        <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandInstagram className="h-full w-full text-neutral-500 " />
       ),
       href: "#",
     },
     {
       title: "Behance",
       icon: (
-        <IconBrandBehance className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandBehance className="h-full w-full text-neutral-500 " />
       ),
       href: "#",
     },
     {
       title: "LinkedIn",
       icon: (
-        <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandLinkedin className="h-full w-full text-neutral-500 " />
       ),
       href: "#",
     },
@@ -36,14 +36,14 @@ export default function Hero() {
     {
       title: "Twitter",
       icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandX className="h-full w-full text-neutral-500 " />
       ),
       href: "#",
     },
     {
       title: "GitHub",
       icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandGithub className="h-full w-full text-neutral-500 " />
       ),
       href: "#",
     },

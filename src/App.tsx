@@ -50,7 +50,7 @@ function App() {
   useLenisScroll();
 
   return (
-   <div className=''>
+   <div className='bg-black text-gray-200'>
    <Navbar/>
     <Intro/>
     <div className='flex-1 mt-12 flex items-center justify-center flex-col mb-6'>
