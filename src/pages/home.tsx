@@ -1,6 +1,4 @@
-import Footer from "../components/footer"
 import Intro from "../components/intro"
-import Navbar from "../components/navbar"
 import Projects from "../components/projects"
 import Qoute from "../components/qoute"
 import Tech from "../components/tech"
@@ -46,7 +44,7 @@ const links = [
 
 export const Home = () => {
     return (
-        <div className='bg-black text-gray-200'>
+        <div >
    
          <Intro/>
          <div className='flex-1 mt-12 flex items-center justify-center flex-col mb-6'>
