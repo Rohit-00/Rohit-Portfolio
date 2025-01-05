@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,12 +28,12 @@ export default function Navbar() {
               >
                 Home
               </a>
-              <a
-                href="#"
+              <Link
+                to="/aboutme"
                 className="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-m font-[400]"
               >
                 About Me
-              </a>
+              </Link>
               <a
                 href="#"
                 className="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-m font-[400]"
