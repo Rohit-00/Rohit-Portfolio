@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,18 +22,18 @@ export default function Navbar() {
           {/* Centered Menu Links (hidden on small screens) */}
           <div className="hidden sm:flex sm:flex-1 justify-center  ">
             <div className="flex space-x-4 border-[0.1px] rounded-full px-5">
-              <a
-                href="#"
-                className="text-gray-300  hover:text-primary px-3 py-2 rounded-md text-m font-[400]"
+              <NavLink
+                to="/"
+                className={({isActive})=>isActive?"text-blue-500 hover:text-blue-500 px-3 py-2 rounded-md text-m font-[400]":"text-gray-300 hover:text-primary px-3 py-2 rounded-md text-m font-[400]"}
               >
                 Home
-              </a>
-              <Link
+              </NavLink>
+              <NavLink
                 to="/aboutme"
-                className="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-m font-[400]"
+                className={({isActive})=>isActive?"text-blue-500 hover:text-blue-500 px-3 py-2 rounded-md text-m font-[400]":"text-gray-300 hover:text-primary px-3 py-2 rounded-md text-m font-[400]"}
               >
                 About Me
-              </Link>
+              </NavLink>
               <a
                 href="#"
                 className="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-m font-[400]"
@@ -104,12 +104,12 @@ export default function Navbar() {
         className="sm:hidden overflow-hidden"
       >
         <div className="px-2 pt-2 pb-3 space-y-1">
-          <a
-            href="#"
+          <Link
+            to="/aboutme"
             className="text-gray-300 hover:text-primary  block px-3 py-2 rounded-md text-base font-medium"
           >
             About Me
-          </a>
+          </Link>
           <a
             href="#"
             className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
