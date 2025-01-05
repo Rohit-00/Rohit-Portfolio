@@ -24,32 +24,25 @@ const projects = [
     projectTech   : 'React Native, React, Reanimated ',
     projectStatus : true,
     projectDesc   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed augue congue, blandit magna at, placerat eros. Mauris faucibus convallis ex, et efficitur mi placerat a. In hac habitasse platea dictumst. In hac habitasse platea dictumst. Nullam efficitur gravida pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus tincidunt mattis ipsum, ut commodo lorem molestie sit amet. Morbi sollicitudin iaculis felis ultrices iaculis. Praesent a tellus vulputate, placerat velit ac, viverra est. Nulla vel porttitor erat. Mauris quis consequat neque. In semper gravida nibh vel commodo. Aenean eu lectus justo. Vestibulum faucibus nibh a dolor auctor tincidunt.",
-    hoverText     : "A react native ui library",
-    githubLink    : ""
+    hoverText     : "A react native ui library with animated components",
+    hoverColor    : "#E75A7C",
+    githubLink    : "https://github.com/Rohit-00/cascade"
 
   },
   {
-    image         : 'https://i.ibb.co/zQ3thNC/image.png',
-    projectName   : 'After Reads',
-    projectLink   : 'https://cascadeui.pages.dev',
-    projectType   : 'An AI based book summarizing app',
-    projectTech   : 'React Native, firebase, Google Books API',
-    projectStatus : false,
-    projectDesc   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed augue congue, blandit magna at, placerat eros. Mauris faucibus convallis ex, et efficitur mi placerat a. In hac habitasse platea dictumst. In hac habitasse platea dictumst. Nullam efficitur gravida pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus tincidunt mattis ipsum, ut commodo lorem molestie sit amet. Morbi sollicitudin iaculis felis ultrices iaculis. Praesent a tellus vulputate, placerat velit ac, viverra est. Nulla vel porttitor erat. Mauris quis consequat neque. In semper gravida nibh vel commodo. Aenean eu lectus justo. Vestibulum faucibus nibh a dolor auctor tincidunt.",
-    hoverText     : "A react native ui library"
-
-  },
-  {
-    image         : 'https://i.ibb.co/zQ3thNC/image.png',
-    projectName   : 'Feedback',
-    projectLink   : 'https://cascadeui.pages.dev',
-    projectType   : 'React Native Component Library',
-    projectTech   : 'React Native, React, Reanimated ',
+    image         : 'https://i.ibb.co/dpSbzTv/image-2025-01-05-213521344.png',
+    projectName   : 'Trivia Time',
+    projectLink   : 'https://www.reddit.com/r/TriviaTimeEvent/',
+    projectType   : 'A community-based Trivia Game',
+    projectTech   : 'Devvit,Redis,Opentdb',
     projectStatus : true,
     projectDesc   : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed augue congue, blandit magna at, placerat eros. Mauris faucibus convallis ex, et efficitur mi placerat a. In hac habitasse platea dictumst. In hac habitasse platea dictumst. Nullam efficitur gravida pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus tincidunt mattis ipsum, ut commodo lorem molestie sit amet. Morbi sollicitudin iaculis felis ultrices iaculis. Praesent a tellus vulputate, placerat velit ac, viverra est. Nulla vel porttitor erat. Mauris quis consequat neque. In semper gravida nibh vel commodo. Aenean eu lectus justo. Vestibulum faucibus nibh a dolor auctor tincidunt.",
-    hoverText     : "A react native ui library"
+    hoverText     : "A Community based trivia game made with devvit",
+    hoverColor    : "#00A6A6",
+    githubLink    : "https://github.com/Rohit-00/Devvit-Trivia"
 
   },
+
   
 ]
 
@@ -62,7 +55,7 @@ const Projects = () => {
 
     return(
       <div style={{fontFamily:'Helvetica'}}>
-        <img src={currentProject.image}  />
+        <img src={currentProject.image} className='object-fill' />
         <div className='flex justify-between mt-4 mx-6 items-center'>
         <a href={currentProject.projectLink}>
         <div className='sm:text-4xl text-3xl font-semibold flex flex-row items-center gap-1'>{currentProject.projectName}<IconExternalLink className='size-9'/></div>
@@ -75,7 +68,7 @@ const Projects = () => {
         <div className='flex  gap-2'> 
         <div>Status : </div>{currentProject.projectStatus === true ? <p className='text-green-500'>live</p> : <p className='text-red-500'>undeployed</p>}
         </div>
-        <a href=''>
+        <a href={currentProject.githubLink} target='_blank'>
         <div className='dark:bg-gray-900 p-2 rounded-full'><IconBrandGithub/></div>
         </a>
         </div>
@@ -103,10 +96,10 @@ const Projects = () => {
 
       return(
        <>
-      <HoverDescription description={item.hoverText} backgroundColor='teal'> 
+      <HoverDescription description={item.hoverText} backgroundColor={item.hoverColor}> 
       <div onClick={()=>{toggleModal();setCurrentProject(item)}} className=' flex flex-col sm:flex-row justify-between sm:h-32 sm:items-center cursor-pointer transition-transform duration-300 ease-in-out sm:hover:scale-90 sm:mx-20 mx-10'>
       <div className=' text-3xl sm:text-3xl font-normal'>{item.projectName}</div>
-      <div className=' sm:hidden'><img src={'https://i.ibb.co/zQ3thNC/image.png'} alt='placeholder' height={400} width={600}></img></div>
+      <div className=' sm:hidden'><img src={item.image} alt='placeholder' height={400} width={600}></img></div>
       <div className='text-sm text-end  flex flex-col'><div className='text-xl sm:text-2xl font-thin'>{item.projectType}</div>
       <div className='font-extralight'>{item.projectTech}</div></div>
       </div> 
