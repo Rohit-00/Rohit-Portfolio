@@ -78,3 +78,26 @@
   font-weight: 700;
   font-style: italic;
 }
+
+.underline-animation {
+  position: relative;
+  overflow: hidden;
+}
+
+.underline-animation::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  transform: translateX(-100%);
+  animation: underline 2s forwards;
+}
+
+@keyframes underline {
+  to {
+      transform: translateX(0);
+  }
+}

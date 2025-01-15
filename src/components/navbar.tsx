@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <div>
-    <nav className="bg-background p-4 font-ubuntu">
+    <nav className="bg-background p-4 font-ubuntu w-full"> 
       <div className=" mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           {/* Left side (Logo) */}
@@ -35,7 +35,7 @@ export default function Navbar() {
                 About Me
               </NavLink>
               <a
-                href="#"
+                href="#projects"
                 className="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-m font-[400]"
               >
                 Projects
@@ -46,9 +46,14 @@ export default function Navbar() {
 
           {/* Right side button (Login) */}
           <div className="hidden sm:flex">
-            <button className="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-m font-[400]">
+          <NavLink
+                to="/contactme"
+                className={({isActive})=>isActive?"text-blue-500 hover:text-blue-500 px-3 py-2 rounded-md text-m font-[400]":"text-gray-300 hover:text-primary px-3 py-2 rounded-md text-m font-[400]"}
+              >
+            
               Contact Me
-            </button>
+          
+            </NavLink>
           </div>
 
           {/* Mobile menu button */}
