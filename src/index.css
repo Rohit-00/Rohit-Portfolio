@@ -1,7 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@layer base {
+  body {
+    @apply  bg-[repeating-linear-gradient(315deg,_rgba(213,213,213,0.1)_0,_rgba(0,0,0,0.1)_1px,_transparent_1px,_transparent_50%)]
+           bg-[size:10px_10px] bg-fixed text-white;
+  }
+}
 :root {
   
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
