@@ -3,7 +3,6 @@ import useLenisScroll from './hooks/lenis'
 import { Home } from './pages/home'
 import Layout from './layout';
 import { AboutMe } from './pages/aboutMe';
-import { motion } from 'framer-motion';
 import { ContactMe } from './pages/contactMe';
 const router = createBrowserRouter([
   {
