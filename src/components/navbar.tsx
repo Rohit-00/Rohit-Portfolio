@@ -15,7 +15,7 @@ export default function Navbar() {
       <div className=" mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           {/* Left side (Logo) */}
-          <div className="flex-shrink-0">
+          <div className="shrink-0">
             <h1 className="text-white text-4xl font-[300] ">/Rohit</h1>
           </div>
 
@@ -60,7 +60,7 @@ export default function Navbar() {
           <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-hidden focus:ring-2 focus:ring-inset focus:ring-white"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
