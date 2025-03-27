@@ -2,9 +2,9 @@ function Intro() {
 
 
   return (
-    <div className="" style={{fontFamily:'Ubuntu mono'}}>
-  <div className='grid grid-cols-12 w-screen gap-x-4 mt-7 '>
-    <div className='col-span-8 text-4xl text-end sm:col-span-7 sm:text-8xl '>
+    <div className="tracking-tighter" style={{fontFamily:'Ubuntu mono'}}>
+  <div className='grid grid-cols-12 w-screen gap-x-4 mt-7'>
+    <div className='col-span-8 text-4xl text-end sm:col-span-7 sm:text-8xl'>
     FullStack & <br/>
     </div>
     <div className=' sm:pt-10 sm:pl-24 col-span-4 text-xs pt-2 sm:col-span-5 sm:text-sm '>
