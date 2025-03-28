@@ -6,8 +6,7 @@ return (
             <div className="flex flex-col">
                 <div className="text-4xl">Hi!! I'm Rohit</div>
                
-                <div className="w-96">and I like building websites and mobile apps.
-                    I love to build stuff that can be used by real users.
+                <div className="w-96">and I love building stuff that can be used by real users. Sometimes I create websites but most of the times mobile apps.
                 </div>
             </div>
             <div>

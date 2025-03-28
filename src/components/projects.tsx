@@ -33,7 +33,7 @@ const projects = [
   {
     image: 'https://i.ibb.co/ZRYfC0b6/image-2025-03-27-153659598.png',
     projectName: 'After Reads',
-    projectLink: 'https://cascadeui.pages.dev',
+    projectLink: 'https://play.google.com/store/apps/details?id=com.rohit965.bookapp',
     projectType: 'Android App',
     projectTech: 'React Native, Expo, Supabase, google gemini, google books API',
     projectStatus: true,
@@ -45,7 +45,7 @@ const projects = [
   {
     image: 'https://i.ibb.co/nshSc0cR/image-2025-03-27-153806613.png',
     projectName: 'Hourglass',
-    projectLink: 'https://cascadeui.pages.dev',
+    projectLink: 'https://play.google.com/store/apps/details?id=com.rohit965.tickdown&pli=1',
     projectType: 'Android App',
     projectTech: 'React Native, Expo, Sqlite',
     projectStatus: true,
