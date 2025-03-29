@@ -34,12 +34,12 @@ export default function Navbar() {
               >
                 About Me
               </NavLink>
-              <a
-                href="#projects"
-                className="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-m font-[400]"
+              <NavLink
+                to="/projects"
+                className={({isActive})=>isActive?"text-blue-500 hover:text-blue-500 px-3 py-2 rounded-md text-m font-[400]":"text-gray-300 hover:text-primary px-3 py-2 rounded-md text-m font-[400]"}
               >
                 Projects
-              </a>
+              </NavLink>
             
             </div>
           </div>
