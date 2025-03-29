@@ -3,7 +3,6 @@ import linkedIn from '../assets/socials/linkedIn.svg'
 import github from '../assets/socials/github.svg'
 import twitter from '../assets/socials/twitter.svg'
 import behance from '../assets/socials/behance.svg'
-import { Link } from 'react-router-dom'
 
 
 const Footer = () => {
