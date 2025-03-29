@@ -3,6 +3,7 @@ import linkedIn from '../assets/socials/linkedIn.svg'
 import github from '../assets/socials/github.svg'
 import twitter from '../assets/socials/twitter.svg'
 import behance from '../assets/socials/behance.svg'
+import { Link } from 'react-router-dom'
 
 
 const Footer = () => {
@@ -23,10 +24,11 @@ const Footer = () => {
     <div className='flex flex-col mx-14 gap-y-2 '>
     <div className='font-bold text-lg'>Explore</div>
     <div className='grid sm:grid-cols-2 gap-2 gap-x-6 gap-y-5'>
-    <div><a href=''>Home</a></div>
-    <div>About me</div>
-    <div>Projects</div>
-    <div>Download CV</div>
+    <div><a href='/'>Home</a></div>
+    <div><a href='/aboutme'>About Me</a></div>
+    <div><a href='/projects'>Projects</a></div>
+    <div><a href='/contactme'>Contact Me</a></div>
+
     </div>
     </div>
     <div className='hidden sm:block'> rohit.991063@gmail.com</div>
