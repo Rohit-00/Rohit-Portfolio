@@ -1,8 +1,10 @@
+import Projects from "../components/projects"
+
 export const ProjectsPage = () => {
 
     return (
         <div>
-               Proects
+               <Projects/>
         </div>
     )
 }
