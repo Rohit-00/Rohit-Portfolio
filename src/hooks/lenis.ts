@@ -8,7 +8,7 @@ const useLenisScroll = () => {
       smoothWheel:true
     });
 
-    lenis.on('scroll', (e: any) => {
+    lenis.on('scroll', () => {
     });
 
     const raf = (time: number) => {
