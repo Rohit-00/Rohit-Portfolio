@@ -115,18 +115,18 @@ export default function Navbar() {
           >
             About Me
           </Link>
-          <a
-            href="#"
+          <Link
+            to="/projects"
             className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
             Projects
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/contactme"
             className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
             Contact Me
-          </a>
+          </Link>
        
         </div>
       </motion.div>
