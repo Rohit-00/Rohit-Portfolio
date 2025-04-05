@@ -52,7 +52,7 @@ export const Home = () => {
          items={links}
          />
              <div style={{fontFamily:'Ubuntu mono'}}>
-         rohit.991063@gmail.com
+         rohit@byrohit.live
          </div>
          </div>
          <Tech/>

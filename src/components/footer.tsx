@@ -30,9 +30,9 @@ const Footer = () => {
 
     </div>
     </div>
-    <div className='hidden sm:block'> rohit.991063@gmail.com</div>
+    <div className='hidden sm:block'> rohit@byrohit.live</div>
     </div>
-    <div className='sm:hidden block mt-4'>rohit.991062@gmail.com</div>
+    <div className='sm:hidden block mt-4'>rohit@byrohit.live</div>
   
     </div>
   
